@@ -1,6 +1,10 @@
+
+
 <div class="main">
   <h1>My To Do List</h1>
-  <label for="addItemInput">What would you like to do today?</label>
+  <div>
+    <label for="addItemInput">What would you like to do today? </label>
+  </div>
 
   <input
     #newItem
@@ -15,4 +19,15 @@
   <ul>
     <li *ngFor="let item of items">{{ item.description }}</li>
   </ul>
+</div>
+
+<div>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 </div>
